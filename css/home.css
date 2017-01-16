@@ -1,0 +1,23 @@
+.home div.view {
+  background-image: url(../img/paris.jpg);
+}
+.home div.view:nth-child(2) {
+  background-image: url(../img/lumixblackflare.jpg);
+}
+.home div.companies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+.home .companies img {
+  display: flex;
+  height: 100px;
+  margin: 40px;
+  /*filter: grayscale(100%);*/
+}
+.home .companies img.isac {
+  border-radius: 100%;
+  border: solid 2px #fff;
+}
