@@ -9,19 +9,12 @@
     <link rel="stylesheet" type="text/css" href="css/head.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
   </head>
-  <body class="videos">
-    <!-- <script type="text/javascript" src="videos.json"></script> -->
-    <script type="text/javascript">
-      var quicktip = "4mwvSQpH1tE"
-      function updatevideo (url) {
-          // var parsed = JSON.parse(videos);
-          var testdata = {
-            "title": "Jakob Unnebäck - 2016",
-            "url": "k91uCW7ypuU",
-            "desc": "Description 2016."
-          };
+  <body class="videos" onload="updatevideo(videos[0].url, videos[0].title)">
 
-          document.getElementById("videoplayer").setAttribute("src", "https://www.youtube.com/embed/" + testdata.url);
+    <script type="text/javascript">
+      function updatevideo (url, title) {
+          document.getElementById("videoplayer").setAttribute("src", "https://www.youtube.com/embed/" + url);
+          document.getElementById('titleText').innerHTML = title
       }
 
     </script>
@@ -35,13 +28,12 @@
     </nav>
     <div class="view">
       <h1>Filmer</h1>
+      <h2 id="titleText"></h2>
       <iframe id="videoplayer" width="560" height="315" src="https://www.youtube.com/embed/k91uCW7ypuU" frameborder="0" allowfullscreen></iframe>
-      <p>
-        Text om videon här!
-      </p>
       <div class="thumbs">
-        <script type="text/javascript">
-        var testdata = [{
+
+      <script type="text/javascript">
+        var videos = [{
           "title": "Jakob Unnebäck - 2016",
           "url": "k91uCW7ypuU",
           "desc": "Description 2016."
@@ -51,14 +43,12 @@
           "desc": "Description dronex."
         }];
 
-        for (i in testdata) {
-          // document.write(testdata[i].url + "<br />");
-          // document.write("<img src="https://i.ytimg.com/vi/" + testdata[i].url + "/maxresdefault.jpg" onclick="updatevideo(quicktip)" alt="">");
-          var printdata = "<img src="https://i.ytimg.com/vi/" + testdata[i].url + ""/maxresdefault.jpg>"
+        for (i in videos) {
+          var printdata = "<img src='https://i.ytimg.com/vi/" + videos[i].url + "/maxresdefault.jpg' onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "')\">"
           document.write(printdata);
         }
         </script>
-        <!-- <img src="https://i.ytimg.com/vi/4mwvSQpH1tE/maxresdefault.jpg" onclick="updatevideo(quicktip)" alt=""> -->
+
       </div>
     </div>
   </body>
