@@ -9,12 +9,13 @@
     <link rel="stylesheet" type="text/css" href="css/head.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
   </head>
-  <body class="videos" onload="updatevideo(videos[0].url, videos[0].title)">
+  <body class="videos" onload="updatevideo(videos[0].url, videos[0].title, videos[0].desc)">
 
     <script type="text/javascript">
-      function updatevideo (url, title) {
+      function updatevideo (url, title, desc) {
           document.getElementById("videoplayer").setAttribute("src", "https://www.youtube.com/embed/" + url);
           document.getElementById('titleText').innerHTML = title
+          document.getElementById('descText').innerHTML = desc
       }
 
     </script>
@@ -30,6 +31,7 @@
       <h1>Filmer</h1>
       <h2 id="titleText"></h2>
       <iframe id="videoplayer" width="560" height="315" src="https://www.youtube.com/embed/k91uCW7ypuU" frameborder="0" allowfullscreen></iframe>
+      <p id="descText"></p>
       <div class="thumbs">
 
       <script type="text/javascript">
@@ -44,7 +46,7 @@
         }];
 
         for (i in videos) {
-          var printdata = "<img src='https://i.ytimg.com/vi/" + videos[i].url + "/maxresdefault.jpg' onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "')\">"
+          var printdata = "<img src='https://i.ytimg.com/vi/" + videos[i].url + "/maxresdefault.jpg' onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\">"
           document.write(printdata);
         }
         </script>
