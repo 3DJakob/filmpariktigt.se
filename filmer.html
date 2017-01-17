@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jakobu - Film på riktigt</title>
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/head.css" />
+    <link rel="stylesheet" type="text/css" href="css/videos.css" />
+  </head>
+  <body class="videos">
+    <!-- <script type="text/javascript" src="videos.json"></script> -->
+    <script type="text/javascript">
+      var quicktip = "4mwvSQpH1tE"
+      function updatevideo (url) {
+          // var parsed = JSON.parse(videos);
+          var testdata = {
+            "title": "Jakob Unnebäck - 2016",
+            "url": "k91uCW7ypuU",
+            "desc": "Description 2016."
+          };
+
+          document.getElementById("videoplayer").setAttribute("src", "https://www.youtube.com/embed/" + testdata.url);
+      }
+
+    </script>
+    <nav>
+      <div>
+        <a href="/">Intro</a>
+        <a href="/filmer">Filmer</a>
+        <a href="/om">Om mig</a>
+        <a href="mailto:jakob@folkdatorn.se">Kontakt</a>
+      </div>
+    </nav>
+    <div class="view">
+      <h1>Filmer</h1>
+      <iframe id="videoplayer" width="560" height="315" src="https://www.youtube.com/embed/k91uCW7ypuU" frameborder="0" allowfullscreen></iframe>
+      <p>
+        Text om videon här!
+      </p>
+      <div class="thumbs">
+        <script type="text/javascript">
+        var testdata = [{
+          "title": "Jakob Unnebäck - 2016",
+          "url": "k91uCW7ypuU",
+          "desc": "Description 2016."
+        },{
+          "title": "QUICK TIP: Never put a prop on the wrong way!",
+          "url": "4mwvSQpH1tE",
+          "desc": "Description dronex."
+        }];
+
+        for (i in testdata) {
+          // document.write(testdata[i].url + "<br />");
+          // document.write("<img src="https://i.ytimg.com/vi/" + testdata[i].url + "/maxresdefault.jpg" onclick="updatevideo(quicktip)" alt="">");
+          var printdata = "<img src="https://i.ytimg.com/vi/" + testdata[i].url + ""/maxresdefault.jpg>"
+          document.write(printdata);
+        }
+        </script>
+        <!-- <img src="https://i.ytimg.com/vi/4mwvSQpH1tE/maxresdefault.jpg" onclick="updatevideo(quicktip)" alt=""> -->
+      </div>
+    </div>
+  </body>
+</html>

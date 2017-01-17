@@ -1,0 +1,10 @@
+.videos div.view {
+  background-image: url(../img/traintracks.jpg);
+}
+.videos .view div.thumbs {
+  margin: 40px;
+}
+.videos .view .thumbs img {
+  height: 200px;
+  cursor: pointer;
+}
