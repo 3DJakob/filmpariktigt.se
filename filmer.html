@@ -8,17 +8,9 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/head.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
+    <script type="text/javascript" src="update.js"></script>
   </head>
   <body class="videos" onload="updatevideo(videos[0].url, videos[0].title, videos[0].desc)">
-
-    <script type="text/javascript">
-      function updatevideo (url, title, desc) {
-          document.getElementById("videoplayer").setAttribute("src", "https://www.youtube.com/embed/" + url);
-          document.getElementById('titleText').innerHTML = title
-          document.getElementById('descText').innerHTML = desc
-      }
-
-    </script>
     <nav>
       <div>
         <a href="/">Intro</a>
