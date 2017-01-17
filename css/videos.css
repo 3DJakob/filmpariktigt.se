@@ -2,9 +2,29 @@
   background-image: url(../img/traintracks.jpg);
 }
 .videos .view div.thumbs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 40px;
 }
 .videos .view .thumbs img {
   height: 200px;
   cursor: pointer;
+  margin: 20px;
+  filter: grayscale(60%);
+  /*transition: 0.3s;*/
+}
+.videos .view .thumbs img:hover {
+  filter: grayscale(0%);
+}
+.videos .view #titleText {
+  text-align: center;
+}
+.videos .view  #descText {
+  text-align: center;
+  margin: 40px;
+  max-width: 900px;
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: 0px;
 }
