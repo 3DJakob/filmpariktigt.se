@@ -9,8 +9,9 @@
     <link rel="stylesheet" type="text/css" href="css/head.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
     <script type="text/javascript" src="update.js"></script>
+    <meta name="small" content="300px">
   </head>
-  <body class="videos" onload="updatevideo(videos[0].url, videos[0].title, videos[0].desc)">
+  <body class="videos" onload="updatevideo(videos[1].url, videos[1].title, videos[1].desc)">
     <nav>
       <div>
         <a href="/">Intro</a>
@@ -28,13 +29,13 @@
 
       <script type="text/javascript">
         var videos = [{
-          "title": "Jakob Unnebäck - 2016",
-          "url": "k91uCW7ypuU",
-          "desc": "Några av mina bästa videominen från året 2016."
-        },{
           "title": "QUICK TIP: Never put a prop on the wrong way!",
           "url": "4mwvSQpH1tE",
           "desc": "Här är ett exempel på en kort instruktionsvideo jag gjorde till min och min kompis youtube kanal där vi hjälper folk med drönare. Ett bra exempel på hur en instruktionsvideo kan vara uplagd."
+        },{
+          "title": "Jakob Unnebäck - 2016",
+          "url": "k91uCW7ypuU",
+          "desc": "Några av mina bästa videominen från året 2016."
         },{
           "title": "Spänning på ABB Industrigymnasium",
           "url": "qBBHqJUIyBE",
@@ -126,7 +127,7 @@
         }];
 
         for (i in videos) {
-          var printdata = "<a style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\"; onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
+          var printdata = "<a style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\" onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
           document.write(printdata);
         }
         </script>
