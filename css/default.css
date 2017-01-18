@@ -24,3 +24,39 @@ h1 {
   font-size: 100px;
   text-align: center;
 }
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+  h1, h2, h3, p, a {
+    font-weight: 400 !important;
+  }
+
+  h1 {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  a {
+    font-size: 14px !important;
+  }
+
+  p {
+    font-size: 20px;
+  }
+
+  .home .companies img {
+    height: 50px !important;
+  }
+
+  .me img {
+    width: 90%;
+  }
+
+  .me div.view :first-child, .videos div.view :first-child {
+    margin-top: 56px;
+  }
+}

@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <title>Jakobu - Film på riktigt</title>
     <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet">
@@ -10,11 +10,12 @@
     <link rel="stylesheet" type="text/css" href="css/head.css" />
     <link rel="stylesheet" type="text/css" href="css/videos.css" />
     <script type="text/javascript" src="update.js"></script>
-    <meta name="small" content="300px">
   </head>
   <body class="videos" onload="updatevideo(videos[1].url, videos[1].title, videos[1].desc)">
     <nav id="nav">
-      <div>
+      <script type="text/javascript"></script>
+      <a id="navToggle" onclick="navbar()">Utforska &#9660;</a>
+      <div id="navcontainer">
         <a href="/">Intro</a>
         <a href="/filmer">Filmer</a>
         <a href="/om">Om mig</a>

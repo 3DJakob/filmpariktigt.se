@@ -1,3 +1,15 @@
+#navToggle {
+  /*display: none;*/
+  position: absolute;
+
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.2s;
+  color: #fff;
+}
+
 nav {
   position: absolute;
   width: 100vw;
@@ -25,10 +37,28 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
-   nav div {
-     flex-direction: column;
-   }
-   nav a {
-     font-size: 22px;
-   }
+  #navToggle {
+    display: flex;
+    position: absolute;
+  }
+  nav {
+    position:static;
+  }
+  nav div {
+   flex-direction: column;
+   height: 0;
+   overflow: hidden;
+   background-color: #000;
+   transition: 0.5s;
+  }
+  nav a {
+   font-size: 22px;
+   color: #fff;
+  }
+  nav a:first-child {
+    margin-top: 59px;
+  }
+  nav a:hover {
+    background-color: rgba(0, 0, 0, 0); !important;
+  }
 }
