@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .videos div.view {
   background-image: url(../img/traintracks.jpg);
 }

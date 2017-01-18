@@ -12,7 +12,7 @@
     <meta name="small" content="300px">
   </head>
   <body class="videos" onload="updatevideo(videos[1].url, videos[1].title, videos[1].desc)">
-    <nav>
+    <nav id="nav">
       <div>
         <a href="/">Intro</a>
         <a href="/filmer">Filmer</a>
@@ -131,7 +131,7 @@
         }];
 
         for (i in videos) {
-          var printdata = "<a style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\" onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
+          var printdata = "<a href=\"#nav\" style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\" onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
           document.write(printdata);
         }
         </script>
