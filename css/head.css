@@ -7,7 +7,6 @@ nav div {
   margin: 0 auto;
   display: flex;
   max-width: 600px;
-  height: 50px;
   justify-content: space-around;
   align-items: center;
 }
@@ -23,4 +22,13 @@ nav a {
 nav a:hover {
   color: #000;
   background-color: #fff;
+}
+
+@media only screen and (max-width: 700px), only screen and (max-device-width: 700px) {
+   nav div {
+     flex-direction: column;
+   }
+   nav a {
+     font-size: 22px;
+   }
 }
