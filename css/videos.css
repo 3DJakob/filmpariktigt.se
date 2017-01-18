@@ -8,14 +8,17 @@
   flex-wrap: wrap;
   margin: 40px;
 }
-.videos .view .thumbs img {
+.videos .view .thumbs a  {
   height: 200px;
+  width: 355px;
+  background-position: center;
+  background-size: cover;
   cursor: pointer;
-  margin: 20px;
+  margin: 40px;
   filter: grayscale(60%);
   /*transition: 0.3s;*/
 }
-.videos .view .thumbs img:hover {
+.videos .view .thumbs a:hover {
   filter: grayscale(0%);
 }
 .videos .view #titleText {

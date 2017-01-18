@@ -126,7 +126,7 @@
         }];
 
         for (i in videos) {
-          var printdata = "<img src='https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg' onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\">"
+          var printdata = "<a style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\"; onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
           document.write(printdata);
         }
         </script>
