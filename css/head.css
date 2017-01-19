@@ -50,6 +50,7 @@ nav a:hover {
    overflow: hidden;
    background-color: #000;
    transition: 0.5s;
+   margin: 0;
   }
   nav a {
    font-size: 22px;
@@ -59,5 +60,7 @@ nav a:hover {
     margin-top: 59px;
   }
   nav a:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
   }
 }
