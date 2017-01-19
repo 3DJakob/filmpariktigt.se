@@ -40,21 +40,23 @@ nav a:hover {
   #navToggle {
     display: flex;
     position: absolute;
+    letter-spacing: 0;
   }
   nav {
     position:static;
   }
   nav div#navcontainer {
-   flex-direction: column;
-   height: 0;
-   overflow: hidden;
-   background-color: #000;
-   transition: 0.5s;
-   margin: 0;
+    max-width: 1000px;
+    flex-direction: column;
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    transition: 0.5s;
+    margin: 0;
   }
   nav a {
-   font-size: 22px;
-   color: #fff;
+    font-size: 22px;
+    color: #fff;
   }
   nav a:first-child {
     margin-top: 59px;
