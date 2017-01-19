@@ -2,8 +2,8 @@
   display: none;
   position: absolute;
 
-  padding: 20px;
-  width: 100%;
+  padding: 20px 0 20px 5%;
+  width: 95%;
   text-align: center;
   text-decoration: none;
   transition: 0.2s;
@@ -24,7 +24,7 @@ nav div {
 }
 
 nav a {
-  padding: 20px;
+  padding: 20px 0;
   width: 100%;
   text-align: center;
   text-decoration: none;
@@ -44,7 +44,7 @@ nav a:hover {
   nav {
     position:static;
   }
-  nav div {
+  nav div#navcontainer {
    flex-direction: column;
    height: 0;
    overflow: hidden;
