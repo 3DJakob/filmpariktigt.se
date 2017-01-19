@@ -58,7 +58,7 @@ nav a:hover {
     font-size: 22px;
     color: #fff;
   }
-  nav a:first-child {
+  nav #navcontainer a:first-child {
     margin-top: 59px;
   }
   nav a:hover {

@@ -14,7 +14,6 @@
   </head>
   <body class="videos" onload="updatevideo(videos[1].url, videos[1].title, videos[1].desc)">
     <nav id="nav">
-      <script type="text/javascript"></script>
       <a id="navToggle" onclick="navbar()">U t f o r s k a &#9660;</a>
       <div id="navcontainer">
         <a href="/">Intro</a>
@@ -132,9 +131,8 @@
           "url": "ez9fFes8vKA",
           "desc": "Five Foot Films var min första youtube kannal och det som startade intresset. Här lägger jag och min kompis upp datorspels inspirerade action videos med special effekter i fokus."
         }];
-
         for (i in videos) {
-          var printdata = "<a href=\"#nav\" style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\" onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
+          var printdata = "<a style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\" onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
           document.write(printdata);
         }
         </script>
