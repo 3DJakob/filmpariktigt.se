@@ -4,6 +4,7 @@ html {
 
 .videos div.view {
   background-image: url(../img/traintracks.jpg);
+  image-rendering: auto;
 }
 .videos .view iframe {
   width: 64vw;

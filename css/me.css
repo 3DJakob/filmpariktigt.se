@@ -1,5 +1,5 @@
 .me div.view {
-  background-image: url(../img/traintracks.jpg);
+  background-image: url(../img/lycksele.jpg);
 }
 .me .view img {
   max-width: 600px;
@@ -7,6 +7,9 @@
 }
 .me .view p:first-of-type {
   margin-top: 40px;
+}
+.me .view p:last-of-type {
+  margin-bottom: 40px;
 }
 .me .view p {
   margin: 15px 30px;
