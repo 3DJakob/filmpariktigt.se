@@ -8,6 +8,7 @@
   text-decoration: none;
   transition: 0.2s;
   color: #fff;
+  cursor: pointer;
 }
 
 nav {
