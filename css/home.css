@@ -2,10 +2,7 @@
   background-image: url(../img/lumixblackflare.jpg);
 }
 .home div.view:nth-of-type(2) {
-  background-image: url(../img/paris.jpg);
-}
-.home div.view:nth-of-type(2) h1 {
-  color: #000;
+  background-image: url(../img/clouds.jpg);
 }
 .home div.companies {
   display: flex;
@@ -19,7 +16,6 @@
   display: flex;
   height: 100px;
   margin: 40px;
-  /*filter: grayscale(100%);*/
 }
 .home .companies img.isac {
   border-radius: 100%;

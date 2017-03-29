@@ -3,18 +3,35 @@ html {
 }
 
 .videos div.view {
-  background-image: url(../img/traintracks.jpg);
+  background-image: url(../img/tora.jpg);
   image-rendering: auto;
 }
 .videos .view iframe {
   width: 64vw;
   height: 36vw;
 }
+
+.videos .view div.arrow-bar {
+  width: 100vw;
+  background-color: #000;
+  text-align: center;
+  margin: 0;
+}
+
+.videos .view div.arrow-bar p {
+  display: visible;
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+}
+
+.videos .view .arrow-bar:hover p {
+  animation: shake 0.8s infinite;
+}
+
 .videos .view div.thumbs {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 40px 40px 0 40px;
   max-width: 100vw;
 }
 .videos .view .thumbs a  {
@@ -60,11 +77,23 @@ html {
     height: 200px;
     width: 355px;
   }
+  .videos .view div.arrow-bar {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .videos .view div.arrow-bar p {
+    display: none;
+  }
 }
 
 @media (max-width: 800px) {
   .videos .view iframe {
     width: 100vw;
     height: 56vw;
+  }
+  .videos .view div.arrow-bar {
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .videos .view div.arrow-bar p {
+    display: none;
   }
 }
