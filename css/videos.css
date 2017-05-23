@@ -62,6 +62,12 @@ html {
   letter-spacing: 0px;
 }
 
+.videos .view  #descText a {
+  font-family: 'Josefin Slab', serif;
+  letter-spacing: 0px;
+  font-size: inherit !important;
+}
+
 @media (min-width: 1800px) {
   .videos .view iframe {
     width: 1152px;

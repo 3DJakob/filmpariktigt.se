@@ -12,7 +12,7 @@
     <link rel="icon" href="img/favicon.ico">
     <script type="text/javascript" src="update.js"></script>
   </head>
-  <body class="videos" onload="updatevideo(videos[1].url, videos[1].title, videos[1].desc)">
+  <body class="videos" onload="updatevideo(videos[5].url, videos[5].title, videos[5].desc)">
     <nav id="nav">
       <a id="navToggle" onclick="navbar()">U t f o r s k a &#9660;</a>
       <div id="navcontainer">
@@ -33,19 +33,19 @@
             var videos = [{
               "title": "Findie Spicy Hot",
               "url": "GettKseJWqQ",
-              "desc": "En reklamvideo jag filmade åt Spicy Hot inom ett samarbete med företaget Findie vilket är en tjänst för att hitta restauranger nära dig."
+              "desc": "En reklamvideo jag filmade åt <a href=\"http://www.spicyhot.se\" target=\"_blank\">Spicy Hot</a> inom ett samarbete med företaget <a href=\"http://findie.se\" target=\"_blank\">Findie</a> vilket är en tjänst för att hitta restauranger nära dig."
             },{
               "title": "Findie Nya Hattfabriken",
               "url": "WOEC6FLZv88",
-              "desc": "En reklamvideo jag filmade åt Nya Hattfabriken inom ett samarbete med företaget Findie vilket är en tjänst för att hitta restauranger nära dig."
+              "desc": "En reklamvideo jag filmade åt <a href=\"http://nyahattfabriken.se\" target=\"_blank\">Nya Hattfabriken</a> inom ett samarbete med företaget <a href=\"http://findie.se\" target=\"_blank\">Findie</a> vilket är en tjänst för att hitta restauranger nära dig."
             },{
               "title": "Findie Global living",
               "url": "fltRcAAr2yI",
-              "desc": "En reklamvideo jag filmade åt inom ett samarbete med företaget vilket är en tjänst för att hitta restauranger nära dig."
+              "desc": "En reklamvideo jag filmade åt <a href=\"http://globalliving.se\" target=\"_blank\">Global living</a> inom ett samarbete med företaget <a href=\"http://findie.se\" target=\"_blank\">Findie</a> vilket är en tjänst för att hitta restauranger nära dig."
             },{
               "title": "Findie Bianchi Cafe & Cycles Västerås",
               "url": "1vmYM5llxJg",
-              "desc": "En reklamvideo jag filmade åt Bianchi Cafe & Cycles Västerås inom ett samarbete med företaget Findie vilket är en tjänst för att hitta restauranger nära dig."
+              "desc": "En reklamvideo jag filmade åt <a href=\"http://bianchicafecycles.com\" target=\"_blank\">Bianchi Cafe & Cycles</a> Västerås inom ett samarbete med företaget <a href=\"http://findie.se\" target=\"_blank\">Findie</a> vilket är en tjänst för att hitta restauranger nära dig."
             },{
               "title": "QUICK TIP: Never put a prop on the wrong way!",
               "url": "4mwvSQpH1tE",
@@ -147,10 +147,18 @@
               "url": "ez9fFes8vKA",
               "desc": "Five Foot Films var min första youtube kannal och det som startade intresset. Här lägger jag och min kompis upp datorspels inspirerade action videos med special effekter i fokus."
             }];
-            for (i in videos) {
-              var printdata = "<a style=\"background-image: url(https://img.youtube.com/vi/" + videos[i].url + "/hqdefault.jpg)\" onclick=\"updatevideo('" + videos[i].url + "','" + videos[i].title + "','" + videos[i].desc + "')\"></a>"
-              document.write(printdata);
-            }
+
+            var target = document.querySelector('.thumbs')
+
+            videos.forEach(function (video) {
+              var link = document.createElement('a')
+              link.style.backgroundImage = 'url(https://img.youtube.com/vi/' + video.url + '/hqdefault.jpg)'
+              link.addEventListener('click', function () {
+                updatevideo(video.url, video.title, video.desc)
+              })
+
+              target.appendChild(link)
+            })
           </script>
         </div>
       </div>
