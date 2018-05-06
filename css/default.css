@@ -67,6 +67,10 @@ h1 {
   .me div.view :first-child, .videos div.view :first-child {
     margin-top: 56px;
   }
+
+  .me .view img {
+    display: block !important;
+  }
 }
 
 @keyframes shake {
